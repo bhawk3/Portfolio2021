@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    
+    <!-- link the js file and emailjs-->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>    
+    <script defer src="main.js"></script>
+    <title>Contact Page</title>
+</head>
+<body>
+<!-- navbar -->
+<section class="navbarSection">
+    <nav class="top-navbar">  <!-- make sure to link logo back to homepage -->
+        <img src="img/Icons/logo.png" alt="Logo" id="logo">
+
+        <div class="menu">
+            <a href="index.html" id="homeLink">Home</a>
+            <a href="about.html" id="aboutMeLink">About Me</a>
+            <a href="index.html#projectTitle" id="projectsLink">Projects</a> <!-- check this -->
+        </div>
+    </nav>
+</section>
+
+
+
+    <!-- create contact form-->
+    <h2 id="contactTitle">Contact</h2>
+    <div id="contactFormBackground">
+        
+    <form method="POST" id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label for="firstName">First Name:</label>
+            <input type="text" placeholder="Enter your first name here" name="fName" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+            <input type="text" placeholder="Enter your last name here" name="lName" id="lastName" required>
+        <label for="contactFormEmail">Email:</label>
+            <input type="email" placeholder="Enter your email address here" name="Email" id="contactFormEmail" required>
+        <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+    </div>   
+            <button id="submit" type="submit" value="send">Submit</Button>
+    </form>
+
+
+
+<!-- footer -->
+<section>
+    <footer class="footerSection">
+            <h3 class="footerName">Brendan Hawk</h3>
+
+                <ul class="social">
+            <li>
+                <a href="https://twitter.com/brendanhawk03"> 
+                    <i class="twitter">
+<!-- Add twitter icon-->
+                        <img src="img/Icons/twitter.icon.JPG" alt="Twitter" class="twitter_icon">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="www.linkedin.com/in/brendan-hawk-2240571b7/"> 
+                    <i class="linkedin">
+<!-- Add linkedin icon -->
+                        <img src="img/Icons/linkedIn.icon.JPG" alt="LinkedIn" class="linkedin_icon">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/bhawk3">
+                    <i class="github">
+<!-- Add github icon -->
+                        <img src="img/Icons/githubIcon.webp"  alt="Github" class="github_icon">
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/b_the_dev/">
+                    <i class="instagram">
+<!-- Add instagram icon-->
+                        <img src="img/Icons/instagram.icon.JPG" alt="Instagram" class="instagram_icon">
+                    </i>
+                </a>
+            </li>
+            
+        </ul>                    
+    </footer>
+</section>
+</body>
+</html>

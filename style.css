@@ -1,0 +1,376 @@
+/* core styles */
+body {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+p {
+    margin: 0;
+}
+img {
+    align-content: center;
+    height:100%;
+    width: 100%;
+}
+/* navbar */
+#logo {
+    float: left;
+    height: 100px;
+    width: 120px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px; 
+  float: right; 
+}
+#aboutMeLink, #projectsLink, #contactLink, #homeLink {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+/* landing page */
+.landingPageParagraph {
+    display: inline-block;
+    text-align: left;
+    padding-right: 15%;
+    transform: translate(5%, 35%);
+}
+#myJobTitles {
+    font-weight:700;
+    font-size:1.5em;
+}
+#myLocation {
+    padding-bottom: 305px;
+}
+.projectSection {
+    margin-top: 200px;
+}
+/* footer section */
+.footerName {
+    display: inline-block;
+    padding-left: 15px;
+    transform: translate(-65%, 225%);
+}
+.social {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    transform: translateX(45%);
+}
+.twitter_icon, .linkedin_icon, .github_icon, .instagram_icon {
+    height: 25px;
+    width: 25px;
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+/* start of the contact page */
+
+#contactFormBackground {
+    display:inline-block;
+    text-align: left;
+    transform: translateX(5%);
+}
+
+#contactTitle {
+    padding-top: 100px;
+    text-align: center;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 325px;
+    padding: 12px;
+    margin-right: 15%;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    resize: vertical;
+  }
+  
+  #submit {
+    color: black;
+    padding: 12px 30px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight:bold;
+    font-size: large;
+    transition: 2s;
+    float:center;
+    }
+  #submit:hover {
+    background-color: #1E90FF;
+  }
+
+
+/* check the break points for 455px and 700ish px */
+@media (min-width: 480px) {
+/* project section */
+
+
+/* about page */
+#brendansPicture {
+    height: 400px;
+    width: 500px;
+}
+#stateOfOhioPicture {
+    height: 500px;
+    width: 400px;
+}
+
+    /* contact page */
+#submit {
+    transform: translate(-175%, 90%);
+}
+}
+@media (min-width: 700px) {
+/* navbar */
+#logo {
+    height: 170px;
+    width: 190px;
+}
+body {
+    font-size: 1.5em;
+}
+.menu {
+    float: right;
+}
+
+/* landing page paragraph */
+.landingPageParagraph {
+    display: inline-block;
+    text-align: left;
+    padding-right: 15%;
+    font-size: 2em;
+    transform: translate(25%, 40%);
+}
+
+
+
+    /* project section */
+.projectSection {
+    margin-top: 700px;
+}
+
+/* footer */
+.footerName {
+    display: inline-block;
+    padding-left: 15px;
+    transform: translate(-15%, 205%);
+}
+.social {
+    display: inline-flex;
+    width: 10px;
+    list-style-type: none;
+    flex-direction: row;
+    transform: translate(80%, 225%);
+}
+
+/* about me page */
+/* my picture */
+#brendansPicture{
+    transform:translate(5%, 35%); /* bring this farther down the y axis*/
+    border-radius: 10px;
+   
+}
+#introduction {
+    transform: translate(15%, 195%);
+    padding-top: 5px;
+}
+#introductionParagraph {
+    width: 800px;
+    transform: translate(5%, 60%);
+}
+#stateOfOhioPicture {
+    transform: translate(10%, 30%);
+    padding-bottom: 35px;
+}
+
+/* contact page */
+#contactFormBackground {
+   
+    transform: translateX(25%);
+}
+input[type=text], input[type=email], textarea {
+    width: 525px;
+   
+  }
+}
+@media (min-width: 1000px) {
+/* navbar */
+.menu {
+
+    float: right;
+
+}
+
+/* project section */
+.projectSection {
+    text-align: center;
+}
+#row1 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    transform: translateX(1%);
+}
+#ticTacToeProject {
+    height: 500px;
+    width: 500px;
+    padding-right: 50px;
+}
+#pieceworkProject {
+    height: 500px;
+    width: 500px;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    transform: translateX(1%);
+}
+#turnoverProject {
+    height: 500px;
+    width: 500px;
+    padding-right: 50px;
+}
+#mailingLabelProject {
+    height: 500px;
+    width: 500px;
+}
+.projectSection h2 {
+    font-size: 1.1em;
+}
+/* about me section */  
+.aboutSection {
+    text-align: center;
+}
+#brendansPicture{
+    height: 450px;
+    width: 550px;
+    margin-left: 10%;
+}
+
+#introduction {
+    margin-left: -40%;
+}
+#introductionParagraph {
+    margin-left: 10%;
+}
+
+
+/* footer section */
+.footerName {
+    display: inline-block;
+    padding-left: 15px;
+    transform: translate(-155%, 205%);
+}
+.social {
+    display: flex;
+    width: 10px;
+    list-style-type: none;
+    flex-direction: row;
+    transform: translate(1400%, 1%);
+}
+.twitter_icon, .linkedin_icon, .github_icon, .instagram_icon {
+    height: 35px;
+    width: 35px;
+}
+}
+
+@media (min-width: 1200px) {
+/* navbar */
+.menu {
+    font-size: 1.5em;
+}
+
+/* landing page */
+.landingPageParagraph {
+    justify-content: center;
+    align-items: center;
+    margin-left: -5%;
+}
+
+
+/* project section*/
+
+#row1 {
+    margin-left: 1%;
+}
+#ticTacToeProject {
+    height: 700px;
+    width: 700px;
+}
+#pieceworkProject {
+    height: 700px;
+    width: 700px;
+}
+#row2 {
+    margin-left: 1%;
+}
+#turnoverProject {
+    height: 700px;
+    width: 700px;
+}
+#mailingLabelProject {
+    height: 700px;
+    width: 700px;
+}
+
+
+/* about me page */
+#introductionParagraph {
+    margin-left: 22%;
+}
+
+#stateOfOhioPicture {
+    margin-bottom: 5%;
+}
+
+
+
+/* contact page */
+#contactTitle {
+    font-size: 2em;
+    transform: translateY(105%);
+}
+#contact-form {
+    margin-top: 35%;
+    font-size: 1.5em;
+}
+input[type=text], input[type=email], textarea {
+    width: 825px;
+    font-size: .75em;
+  }
+  #submit {
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    }
+
+/* footer */
+
+.social {
+    display: flex;
+    width: 10px;
+    list-style-type: none;
+    flex-direction: row;
+    position: relative;
+    left: 23%;
+}
+/*mobile responsive for devices min-width: 320px and max-width: 480px*/
+
+/* tablet responsive for devices min-width: 768px and max-width: 1024px*/
+
+}
